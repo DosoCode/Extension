@@ -1,0 +1,11 @@
+{
+  "name": "Digital Literacy toolkit",
+  "description": "Gives guided tutorial for gmail",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "permissions": ["tabs"],
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "hello_extensions.png"
+  }
+}
