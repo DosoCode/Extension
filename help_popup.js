@@ -1,5 +1,5 @@
 var is_gmail = false;
-
+var is_zoom = false;
 document.addEventListener('DOMContentLoaded', () => {
     chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
         const status = document.getElementById('status');
@@ -11,8 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         const url = tabs[0].url || '';
-        if (url.includes('zoom.com')) {
+        if (url.includes('zoom.com' ) || url.includes('zoom.us')) {
             status.textContent = 'This tab is a Zoom page!';
+            is_zoom = true;
         } else if (url.includes('mail.google.com')) {
             is_gmail = true
             status.textContent = 'This tab is a Gmail page!';
@@ -27,12 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    myButton.addEventListener('click', loadGmailHelp);
+    myButton.addEventListener('click', loadHelp);
 });
 
 
 
-function loadGmailHelp() {
+function loadHelp() {
 
     if (is_gmail) {
         fetch(chrome.runtime.getURL('gmail_tutorial.html'))
@@ -40,7 +41,14 @@ function loadGmailHelp() {
             .then(html => {
                 document.body.innerHTML = html;
             });
-    } else {
+    } else if (is_zoom) {
+        fetch(chrome.runtime.getURL('zoom_tutorial.html'))
+            .then(response => response.text())
+            .then(html => {
+                document.body.innerHTML = html;
+            });
+    }else {
         alert('This is not a Gmail page. Please open a Gmail tab to view the help.');
     }
 }
+

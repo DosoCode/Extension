@@ -9,7 +9,7 @@
   "permissions": ["activeTab","tabs"],
   "action": {
     "default_popup": "help_popup.html",
-    "default_icon": "hello_extensions.png"
+    "default_icon": "Help_image.png"
   }
 
 }
