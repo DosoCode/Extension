@@ -6,11 +6,16 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["activeTab","tabs"],
+  "permissions": ["activeTab", "tabs"],
   "action": {
     "default_popup": "help_popup.html",
-    "default_icon": "hello_extensions.png"
-  }
-
+    "default_icon": "help_extensions.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
 }
 

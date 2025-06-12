@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     myButton.addEventListener('click', loadGmailHelp);
+    chrome.runtime.connect({ name: "popup" });
 });
 
 
