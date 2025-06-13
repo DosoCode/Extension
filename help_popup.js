@@ -1,5 +1,6 @@
 var is_gmail = false;
 var is_zoom = false;
+var is_youtube = false;
 document.addEventListener('DOMContentLoaded', () => {
     chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
         const status = document.getElementById('status');
@@ -18,8 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
             is_gmail = true
             status.textContent = 'This tab is a Gmail page!';
 
+        } else if (url.includes('youtube.com')) {
+            is_youtube = true
+            status.textcontent = 'This tab is a youtube Page'
         } else {
-            status.textContent = 'This tab is NOT a Zoom or Gmail page.';
+            status.textContent = 'There is not a guide available for this website page.';
         }
     });
     const myButton = document.getElementById('loadTutorial');
@@ -43,6 +47,12 @@ function loadHelp() {
             });
     } else if (is_zoom) {
         fetch(chrome.runtime.getURL('zoom_tutorial.html'))
+            .then(response => response.text())
+            .then(html => {
+                document.body.innerHTML = html;
+            });
+    }else if (is_youtube) {
+        fetch(chrome.runtime.getURL('youtube_tutorial.html'))
             .then(response => response.text())
             .then(html => {
                 document.body.innerHTML = html;
