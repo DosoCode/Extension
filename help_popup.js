@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     myButton.addEventListener('click', loadHelp);
+    chrome.runtime.connect({ name: "popup" });
 });
 
 

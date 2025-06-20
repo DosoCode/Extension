@@ -1,20 +1,23 @@
 /* Set popup dimensions */
 body {
-    width: 375px;
-    height: 350px;
+    width: 400px;
     margin: 0;
-    margin-left: 10px;
-    padding: 0;
-    background: #428fb9;
+    padding: 5px;
+    background: #46a99869;
     font-family: Arial, sans-serif;
+    border-style: solid;
+    border-color: #00d4a6;
+border-width: 10px;
 }
 
 /* Style the popup container */
 .popup-container {
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     background: #fff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+border-color: #00d4a6;
+border-width: 10px;
 }
 
 /* Example button styling */
@@ -22,8 +25,9 @@ button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background: #0078d4;
+    background: #00d4a6;
     color: #fff;
     cursor: pointer;
     font-size: 16px;
 }
+

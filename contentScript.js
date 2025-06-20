@@ -19,23 +19,17 @@ function injectBanner() {
     font-size: 15px;
   `;
 
-  const icon = document.createElement('img');
-  icon.src = chrome.runtime.getURL('help_extensions.png');
-  icon.alt = 'Help Icon';
-  icon.style.cssText = 'height: 24px; margin-right: 12px;';
-
   const text = document.createElement('span');
-  text.textContent = 'Need help? Click the extension icon in your browser toolbar for a guided Gmail tutorial.';
+  text.textContent = 'Need help? Click the extension icon in your browser toolbar for a guided tutorial.';
 
-  banner.appendChild(icon);
   banner.appendChild(text);
 
   // Add a close button
   const closeBtn = document.createElement('button');
   closeBtn.textContent = '×';
   closeBtn.style.cssText = `
-    margin-left: auto;
-    background: none;
+  background-image: url(close_button.png);
+    align-content: start;
     border: none;
     font-size: 20px;
     cursor: pointer;
