@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             status.textContent = 'There is not a guide available for this website page.';
         }
     });
+
     const myButton = document.getElementById('loadTutorial');
     if (!myButton) {
         console.error('Button element not found');
@@ -34,8 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     myButton.addEventListener('click', loadHelp);
     chrome.runtime.connect({ name: "popup" });
-});
 
+});
 
 
 function loadHelp() {
@@ -62,4 +63,3 @@ function loadHelp() {
         alert('This is not a Gmail page. Please open a Gmail tab to view the help.');
     }
 }
-
