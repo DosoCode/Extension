@@ -60,6 +60,6 @@ function loadHelp() {
                 document.body.innerHTML = html;
             });
     }else {
-        alert('This is not a Gmail page. Please open a Gmail tab to view the help.');
+        alert('There is no tutorial available for this website. Please open a different website. You can also view all the available tutorials with the other button');
     }
 }
