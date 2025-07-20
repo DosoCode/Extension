@@ -3,13 +3,21 @@ body {
     width: 400px;
     margin: 0;
     padding: 5px;
-    background: #46a99869;
+    background: #46a99869; /* change text color to make it stand out more*/
     font-family: cursive, sans-serif;
     border-style: solid;
     border-color: #00d4a6;
+    letter-spacing: 0.08px;
+    word-spacing: 4px;
+
 border-width: 10px;
 }
 
+.bullet_icon {
+padding-left: 30px;
+background-repeat: no-repeat;
+background-size: 5%; 
+}
 /* Style the popup container */
 .popup-container {
     padding: 20px;
