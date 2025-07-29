@@ -1,16 +1,18 @@
 /* Set popup dimensions */
 body {
-    width: 400px;
     margin: 0;
     padding: 5px;
-    background: #46a99869; /* change text color to make it stand out more*/
-    font-family: cursive, sans-serif;
+    background: #373a3969; /* change text color to make it stand out more*/
+    font-family: "Trebuchet MS", "Monaco", "Verdana", monospace;/* first font will be displayed. If not available then next font*/
     border-style: solid;
-    border-color: #00d4a6;
     letter-spacing: 0.08px;
     word-spacing: 4px;
-
-border-width: 10px;
+    border-width: 0px;
+    background-color: #1e1e1e; /* Dark charcoal */
+  color: #f0f0f0; /* Light gray text */
+  width: 400px;
+  height: 101%;
+  box-sizing: border-box;
 }
 
 .bullet_icon {

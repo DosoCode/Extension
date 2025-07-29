@@ -16,6 +16,12 @@
       "matches": ["https://www.youtube.com/", "https://mail.google.com/*", "https://www.zoom.com/", "https://www.zoom.us/"],
       "js": ["contentScript.js"]
     }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["dimensions.css", "tutorials/*.html", "images/*"],
+      "matches": ["<all_urls>"]
+    }
   ]
 
 }

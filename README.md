@@ -5,4 +5,28 @@ This extension has a guided tutorial for various sites. It is geared more toward
 
 Im just gonna store the chatgpt prompt i used for the tutorials
 
-Generate a html file for a tutorial for (tutorial) geared towards a non-technical audience. Use this outlook tutorial as a template. The tutorial should have the same format as the outlook tutorial but with the content being for outlook. Also DO NOT use curly smart quotes in the code. Use standard straight quotes and apostrophe's in the code.
+
+Generate a html file for a youtube tutorial geared towards a non-technical audience. I will provide a template. The tutorial should have the same format as the template. The content of the youtube tutorial may be longer than the template. Include more sections and headings if needed. Use standard straight quotes and apostrophe's in the code. make sure the video embeds actually work. 
+
+
+Use this outlook tutorial as a template.
+
+
+Code taken out of help_poup.js
+
+        if (url.includes('zoom.com' ) || url.includes('zoom.us')) {
+            status.textContent = 'This tab is a Zoom page!';
+            is_zoom = true;
+        } else if (url.includes('mail.google.com')) {
+            is_gmail = true
+            status.textContent = 'This tab is a Gmail page!';
+
+        } else if (url.includes('youtube.com')) {
+            is_youtube = true
+            status.textContent = 'This tab is a youtube Page'
+        } else if (url.includes('outlook.com') || url.includes('outlook.live')) {
+            is_outlook = true
+            status.textContent = 'This tab is an Outlook Page'
+        } else {
+            status.textContent = 'There is not a guide available for this website page.';
+        }
