@@ -10,7 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {id: 'gmail', file: 'gmail_tutorial.html'},
         {id: 'zoom', file: 'zoom_tutorial.html'},
         {id: 'youtube', file: 'youtube_tutorial.html'},
-        {id: 'outlook', file: 'outlook_tutorial.html'}
+        {id: 'outlook', file: 'outlook_tutorial.html'},
+        {id: 'excel', file: 'excel_tutorial.html'},
+        {id: 'facebook', file: 'facebook_tutorial.html'},
+        {id: 'amazon', file: 'amazon_tutorial.html'},
+        {id: 'wikipedia', file: 'wikipedia_tutorial.html'}
     ];
 
     let matchedPage = null; // Store the matched tutorial page

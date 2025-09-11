@@ -6,7 +6,7 @@ This extension has a guided tutorial for various sites. It is geared more toward
 Im just gonna store the chatgpt prompt i used for the tutorials
 
 
-Generate a html file for a youtube tutorial geared towards a non-technical audience. I will provide a template. The tutorial should have the same format as the template. The content of the youtube tutorial may be longer than the template. Include more sections and headings if needed. Use standard straight quotes and apostrophe's in the code. make sure the video embeds actually work. 
+Generate a html file for a [] tutorial geared towards a non-technical audience. I will provide a template. The tutorial should have the same format as the template. The content of the [] tutorial may be longer than the template. Include more sections and headings if needed. Use standard straight quotes and apostrophe's in the code. make sure the video embeds actually work. 
 
 
 Use this outlook tutorial as a template.
