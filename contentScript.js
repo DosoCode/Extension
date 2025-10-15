@@ -28,7 +28,7 @@ function injectBanner() {
   const closeBtn = document.createElement('button');
   closeBtn.textContent = '×';
   closeBtn.style.cssText = `
-  background-image: url(close_button.png);
+  background-image: url("${chrome.runtime.getURL('close_button.png')}");
     align-content: start;
     border: none;
     font-size: 20px;

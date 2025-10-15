@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // this array defines the different tutorial pages and their corresponding identifiers
     const tutorialPages = [
-        {id: 'gmail', file: 'gmail_tutorial.html'},
+        {id: 'mail.google', file: 'gmail_tutorial.html'},
         {id: 'zoom', file: 'zoom_tutorial.html'},
         {id: 'youtube', file: 'youtube_tutorial.html'},
         {id: 'outlook', file: 'outlook_tutorial.html'},

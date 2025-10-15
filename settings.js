@@ -19,7 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
  
-    select.addEventListener('change', saveTheSettings);
+        if (select) {
+                select.addEventListener('change', saveTheSettings);
+        }
   
 });
 

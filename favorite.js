@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const select = document.getElementById('slider');
  
-    select.addEventListener('change', saveFavorite);
+    if (select) {
+        select.addEventListener('change', saveFavorite);
+    }
   
 });
 
